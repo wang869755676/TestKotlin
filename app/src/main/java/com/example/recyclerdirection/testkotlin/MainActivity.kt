@@ -36,7 +36,21 @@ class MainActivity : AppCompatActivity() {
         // obj 在种类检查外仍然是 Any 类型
         return null
     }
+     fun demo(lists:ArrayList<Int>){
+         val list = ArrayList<Int>()
+         for (item in lists )
+             list.add(item)
+         for (i in 0..lists.size - 1)
+             list[i] = lists[i]
+     }
 
-
+    fun describe(obj: Any): String =
+            when (obj) {
+                1          -> "One"
+                "Hello"    -> "Greeting"
+                is Long    -> "Long"
+                !is String -> "Not a string"
+                else       -> "Unknown"
+            }
 
 }
