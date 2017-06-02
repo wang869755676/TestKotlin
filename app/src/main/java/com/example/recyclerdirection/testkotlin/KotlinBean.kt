@@ -7,4 +7,5 @@ class KotlinBean {
     public var name:String="wangjin"
     get() = "name=$this.name"
 
+    
 }
