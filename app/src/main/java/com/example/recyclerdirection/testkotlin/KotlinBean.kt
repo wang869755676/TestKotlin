@@ -8,5 +8,4 @@ class KotlinBean {
     get() = "name=$this.name"
 
 
-
 }
